@@ -29,7 +29,7 @@ const Phoenixes = ({phoenixes, deletePhoenix}) => {  // even more DESTRUCTURED, 
         <div>Name: {phoenix.name}</div>
         <div>Age: {phoenix.age}</div>
         <div>Belt: {phoenix.belt}</div>
-        <button onClick={deletePhoenix(phoenix.id)}>Delete phoenix</button>
+        <button onClick={() => {deletePhoenix(phoenix.id)}}>Delete phoenix</button>
         <p>-------------------</p>
       </div>
     ) : null;
