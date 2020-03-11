@@ -28,7 +28,16 @@ class App extends Component {
       phoenixes: newPhoenixes
     })
   }
-  deletePhoenix = (id) => {}
+  deletePhoenix = (id) => {
+    console.log(id)
+
+    let phoenixesMinusOne = this.state.phoenixes.filter(phoenix => {
+      return phoenix.id !== id;
+    });
+    this.setState({
+      phoenixes: phoenixesMinusOne
+    })
+  }
   render(){
     return (
       <div className="App">
