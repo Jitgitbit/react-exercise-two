@@ -7,6 +7,7 @@ class App extends Component {
     phoenixes: [
       {name:'Thierry', age:40, belt:'black', id:1},
       {name:'Joachim', age:41, belt:'green', id:2},
+      {name:'Olivier', age:45, belt:'blue', id:4},
       {name:'Luke', age:33, belt:'pink', id:3}
     ]
   }

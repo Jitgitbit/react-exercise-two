@@ -8,14 +8,19 @@ const Phoenixes = ({phoenixes}) => {  // even more DESTRUCTURED, props by name !
     // const phoenix = this.props.phoenix;
 
     const phoenixesList = phoenixes.map(phoenix => {
-      return (
-        <div className='phoenix' key={phoenix.id}>
-          <div>Name: {phoenix.name}</div>
-          <div>Age: {phoenix.age}</div>
-          <div>Belt: {phoenix.belt}</div>
-          <p>-------------------</p>
-        </div>
-      )
+      if(phoenix.age > 40){
+        return (
+          <div className='phoenix' key={phoenix.id}>
+            <div>Name: {phoenix.name}</div>
+            <div>Age: {phoenix.age}</div>
+            <div>Belt: {phoenix.belt}</div>
+            <p>-------------------</p>
+          </div>
+        )
+      }else{
+        return null;
+      }
+      
     })
 
 
