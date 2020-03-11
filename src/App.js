@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <h1>React exercise Two</h1>
       <p>Welcome :)</p>
-      <Phoenix/>
+      <Phoenix name='Thierry' age='40' belt='Black'/>
     </div>
   );
 }
