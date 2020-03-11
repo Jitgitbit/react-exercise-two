@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Phoenixes = (props) => {
+const Phoenixes = ({phoenixes}) => {  // even more DESTRUCTURED, props by name !, adding by {phoenixes,...,...,...}
 
-    console.log('=======>> PROPS HERE ARE:',props)
+    console.log('=======>> PROPS PHOENIXES HERE ARE:',phoenixes) //see comment above, line 3
 
-    const {phoenixes} = props;    // These two mean exactly the same, but this line is the DESTRUCTURED way !!
+    // const {phoenixes} = props;    // These two mean exactly the same, but this line is the DESTRUCTURED way !!
     // const phoenix = this.props.phoenix;
 
     const phoenixesList = phoenixes.map(phoenix => {
