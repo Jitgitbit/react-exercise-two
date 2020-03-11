@@ -13,7 +13,8 @@ export default class AddPhoenix extends Component {
   }
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state);
+    // console.log(this.state);
+    this.props.addPhoenix(this.state)
   }
   render() {
     return (

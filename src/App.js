@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Phoenix from './components/Phoenixes';
+import Phoenixes from './components/Phoenixes';
 import AddPhoenix from './components/AddPhoenix';
 
 
@@ -12,6 +12,9 @@ class App extends Component {
       {name:'Luke', age:33, belt:'pink', id:3}
     ]
   }
+  addPhoenix = (phoenix) => {
+    console.log(phoenix);
+  }
   render(){
     return (
       <div className="App">
@@ -22,8 +25,8 @@ class App extends Component {
         <hr/>
         <Phoenix name='Joachim' age='41' belt='Green'/> */}
         <hr/>
-        <Phoenix phoenixes={this.state.phoenixes}/>
-        <AddPhoenix/>
+        <Phoenixes phoenixes={this.state.phoenixes}/>
+        <AddPhoenix addPhoenix={this.addPhoenix}/>
       </div>
     );
   }
