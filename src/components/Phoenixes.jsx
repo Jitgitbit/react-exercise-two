@@ -9,7 +9,7 @@ export default class Phoenix extends Component {
 
     const phoenixesList = phoenixes.map(phoenix => {
       return (
-        <div className='phoenix'>
+        <div className='phoenix' key={phoenix.id}>
           <div>Name: {phoenix.name}</div>
           <div>Age: {phoenix.age}</div>
           <div>Belt: {phoenix.belt}</div>
@@ -18,7 +18,7 @@ export default class Phoenix extends Component {
       )
     })
 
-    
+
     return (
       // <div className='phoenix'>
       //   <div>Name: {name}</div>
