@@ -38,6 +38,9 @@ class App extends Component {
       phoenixes: phoenixesMinusOne
     })
   }
+  componentDidMount(){
+    console.log(`component mounted`)
+  }
   render(){
     return (
       <div className="App">
