@@ -1,4 +1,5 @@
 import React from 'react';
+import Phoenix from './components/Phoenix';
 
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <h1>React exercise Two</h1>
       <p>Welcome :)</p>
+      <Phoenix/>
     </div>
   );
 }
