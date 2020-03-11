@@ -28,6 +28,7 @@ class App extends Component {
       phoenixes: newPhoenixes
     })
   }
+  deletePhoenix = (id) => {}
   render(){
     return (
       <div className="App">
@@ -38,7 +39,7 @@ class App extends Component {
         <hr/>
         <Phoenix name='Joachim' age='41' belt='Green'/> */}
         <hr/>
-        <Phoenixes phoenixes={this.state.phoenixes}/>
+        <Phoenixes phoenixes={this.state.phoenixes} deletePhoenix={this.deletePhoenix}/>
         <AddPhoenix addPhoenix={this.addPhoenix}/>
       </div>
     );
