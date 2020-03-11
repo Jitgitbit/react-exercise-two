@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Phoenixes = ({phoenixes}) => {  // even more DESTRUCTURED, props by name !, adding by {phoenixes,...,...,...}
+const Phoenixes = ({phoenixes, deletePhoenix}) => {  // even more DESTRUCTURED, props by name !, adding by {phoenixes,...,...,...}
 
     console.log('=======>> PROPS PHOENIXES HERE ARE:',phoenixes) //see comment above, line 3
 
@@ -29,6 +29,7 @@ const Phoenixes = ({phoenixes}) => {  // even more DESTRUCTURED, props by name !
         <div>Name: {phoenix.name}</div>
         <div>Age: {phoenix.age}</div>
         <div>Belt: {phoenix.belt}</div>
+        <button onClick={deletePhoenix(phoenix.id)}>Delete phoenix</button>
         <p>-------------------</p>
       </div>
     ) : null;
