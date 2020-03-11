@@ -14,6 +14,19 @@ class App extends Component {
   }
   addPhoenix = (phoenix) => {
     console.log(phoenix);
+
+    phoenix.id = Math.random(); // more than likely unique
+
+    // this.setState({
+    //   phoenixes : this.phoenixes.push(phoenix)     // YES this would work, but NO we don't directly edit the state !!!!!
+    // })
+
+    // this.phoenixes.push(phoenix)                   // SAME REMARK AS ABOVE, no altering  global state !!!!!
+
+    let newPhoenixes = [...this.state.phoenixes, phoenix];  // There you go, a new copy of the array, and a new phoenix added to it !
+    this.setState({
+      phoenixes: newPhoenixes
+    })
   }
   render(){
     return (
