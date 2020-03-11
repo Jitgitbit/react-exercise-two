@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Phoenix from './components/Phoenixes';
+import AddPhoenix from './components/AddPhoenix';
 
 
 class App extends Component {
@@ -22,6 +23,7 @@ class App extends Component {
         <Phoenix name='Joachim' age='41' belt='Green'/> */}
         <hr/>
         <Phoenix phoenixes={this.state.phoenixes}/>
+        <AddPhoenix/>
       </div>
     );
   }
