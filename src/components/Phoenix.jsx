@@ -5,9 +5,9 @@ export default class Phoenix extends Component {
     console.log('=======>> PROPS HERE ARE:',this.props)
     return (
       <div className='phoenix'>
-        <div>Name: Thierry</div>
-        <div>Age: 39</div>
-        <div>Belt: Black</div>
+        <div>Name: {this.props.name}</div>
+        <div>Age: {this.props.age}</div>
+        <div>Belt: {this.props.belt}</div>
       </div>
     )
   }
