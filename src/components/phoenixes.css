@@ -1,0 +1,10 @@
+body {
+  background: pink;
+  transition: all 1s;
+  font-family: sans-serif;
+}
+
+form {
+  background: #fff;
+  padding: 10px;
+}

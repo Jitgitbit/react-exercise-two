@@ -1,4 +1,5 @@
 import React from 'react'
+import './phoenixes.css'
 
 const Phoenixes = ({phoenixes, deletePhoenix}) => {  // even more DESTRUCTURED, props by name !, adding by {phoenixes,...,...,...}
 
